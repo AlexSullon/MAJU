@@ -1,0 +1,59 @@
+.top-header {
+  position: fixed;
+  background-color: blue;
+  width: 100%;
+  z-index: 100;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box; /* Evita que el padding ensanche la barra */
+  top: 0;
+  left: 0;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu-Horizontal li {
+  position: relative; /* Clave para posicionar el menú vertical */
+}
+
+.Menu-Horizontal li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  color: white;
+}
+
+.Menu-Horizontal li a:hover {
+  color: aqua;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Despliega justo abajo del link principal */
+  left: 0;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: aquamarine;
+  border-radius: 25px;
+}
+
+.Menu-Vertical li a {
+  color: red; /* Estilo heredado del menú vertical anterior */
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}

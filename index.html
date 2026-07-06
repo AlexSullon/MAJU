@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS - Toquiart</title>
+    <link rel="stylesheet" href="hojadeestilo_cabezera.css" />
+    <link rel="stylesheet" href="he_secciones.css" />
+    <link rel="stylesheet" href="he_formulario.css" />
+    <link rel="stylesheet" href="pie.css" />
+  </head>
+  <body>
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img height="90" width="160" src="imagene/toquiart.png" alt="logo" />
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="#">Productos y servicios</a></li>
+        <li>
+          <a href="#">Canales digitales</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Cuenta DNI</a></li>
+            <li><a href="#">Cuenta Empresa</a></li>
+            <li><a href="#">Págalo.pe</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Beneficios</a></li>
+        <li><a href="#">Banca Internet</a></li>
+      </ul>
+    </nav>
+
+    <section class="sc-calidad">
+      <div class="div-gral-calidad">
+        <div class="div_caliad-text">
+          <h2>Materias primas naturales y controladas</h2>
+          <p>
+            Sabemos que la calidad de un helado comienza en el correcto origen
+            de su materia prima. Por eso, elegimos trabajar con los mejores
+            productores, seleccionando los especialistas en cada ingrediente,
+            siempre de origen natural.
+          </p>
+          <p>
+            Además, aplicamos exhaustivos análisis sobre cada materia prima
+            asegurando su inocuidad y el estándar de excelencia que buscamos.
+            Solo si el ingrediente aprueba los controles de laboratorio puede
+            ingresar al proceso productivo.
+          </p>
+        </div>
+        <div class="div_calidad-img">
+          <img
+            height="250"
+            width="250"
+            src="imagene/pajatoquilla.jpeg"
+            alt="Img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec_beneficios">
+      <div class="div-gral-beneficios">
+        <div class="div-gral-txt">
+          <h2>El Arte del Tejido a Mano en Paja Toquilla</h2>
+          <p>
+            ¡Lleva la tradición de Narihualá a tu hogar! Si deseas consultar por
+            nuestros sombreros, canastas o accesorios tejidos en paja toquilla,
+            o si quieres solicitar un diseño personalizado, déjanos tus datos.
+            Nos encantará ponernos en contacto contigo para ayudarte a elegir
+            una pieza única hecha con el corazón por nuestros artesanos.
+          </p>
+        </div>
+        <div class="div-gral-vid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9VFYVoLOjpE?si=FxCLVsc7OQmIcuxh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-formulario">
+      <div class="div-geral-formulario">
+        <h2>Formulario</h2>
+        <p>
+          ¿Tienes alguna consulta o deseas un diseño personalizado? Completa el
+          formulario con tus datos de contacto y te enviaremos toda la
+          información sobre nuestras artesanías a la brevedad.
+        </p>
+
+        <form class="Formulario-principal">
+          <div class="campo">
+            <label for="nombres">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              placeholder="Ingrese sus nombres completos"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="Producto">Producto a escoger:</label>
+            <select id="Producto" name="Producto">
+              <option value="">Seleccione el producto a preguntar</option>
+              <option value="Sombrero">Sombrero</option>
+              <option value="Carteras">Carteras</option>
+              <option value="Canastas">Canastas</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Detalles</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="Detalles" value="Pintado" /> Con
+                  diseño pintado a mano</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Detalles" value="Tallado" /> Con
+                  grabado o tallado personalizado</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Detalles" value="Colores" /> Con
+                  colores a elección</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <label>Sexo</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="Masculino" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="Femenino" />
+                  Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="No_deseo" /> No deseo
+                  especificar</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="imagene/toquiart.png" alt="Logo" class="footer-logo" />
+            <p>SENATI</p>
+            <small>© 2026 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/documentos/politica_aip.pdf" target="_blank"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+
+            <a
+              href="https://phylo.co/blog/que-son-los-terminos-y-condiciones/"
+              target="_blank"
+              >Términos y Condiciones</a
+            >
+
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/documentos/LEY29733.pdf" target="_blank"
+              >Protección de Datos</a
+            >
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

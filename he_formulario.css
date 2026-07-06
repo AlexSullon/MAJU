@@ -1,0 +1,81 @@
+/*SECCION FORMULARIO*/
+
+.seccion-formulario {
+  background-color: #8deeee;
+  padding: 40px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.div-geral-formulario {
+  background-color: #9b958d;
+  padding: 30px;
+  border: 2px solid #7e04f1;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.campo {
+  background-color: #94f0d2;
+  padding: 15px;
+  border: 1px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.Formulario-principal label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #7e04f1;
+}
+
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #000000;
+  background-color: #c79cef;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: #ef9d05;
+  color: #000000;
+  border: 1.5px solid #1e04cb;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.formulario-contacto,
+.contacto-instrucciones {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .seccion-formulario {
+    flex-direction: column; /* Ajusta los márgenes externos en pantallas chicas */
+  }
+
+  .div-geral-formulario {
+    padding: 20px 15px; /* Hace el formulario un poquito más compacto por dentro */
+  }
+
+  .mensaje-enviado {
+    text-align: center;
+  }
+}
