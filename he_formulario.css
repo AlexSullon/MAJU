@@ -1,7 +1,7 @@
 /*SECCION FORMULARIO*/
 
 .seccion-formulario {
-  background-color: #8deeee;
+  background-color: #ffefdb;
   padding: 40px;
   border: 3px;
   display: flex;
@@ -10,16 +10,16 @@
 }
 
 .div-geral-formulario {
-  background-color: #9b958d;
+  background-color: #fff3e4;
   padding: 30px;
-  border: 2px solid #7e04f1;
+  border: 2px solid #4e402f;
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
 }
 
 .campo {
-  background-color: #94f0d2;
+  background-color: #ffefdb;
   padding: 15px;
   border: 1px;
   border-radius: 8px;
@@ -30,7 +30,7 @@
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #7e04f1;
+  color: #000000;
 }
 
 .formulario input[type="text"],
@@ -48,12 +48,12 @@
   padding: 10px;
   margin: 0;
   border: 1px solid #000000;
-  background-color: #c79cef;
+  background-color: #f0edc3;
   border-radius: 8px;
 }
 
 .button {
-  background-color: #ef9d05;
+  background-color: #6b8e23;
   color: #000000;
   border: 1.5px solid #1e04cb;
   padding: 10px 20px;
